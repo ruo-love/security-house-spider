@@ -13,26 +13,37 @@ from openpyxl import Workbook
 
 class SecurityhousePipeline:
 
-    def __init__(self):
+    def __init__(self, spider):
+        self.types = spider.types
         self.wb = Workbook()
         self.ws = self.wb.active
         # people
-        self.ws.title = '上海保障房数据汇总'
-        self.ws.append(['地区', '年份', '是否上海户籍', '本批准予（户）', '参加选房家庭（户）', '选购房源家庭（户）', '地址'])
+        if self.types == 'people':
+            self.ws.title = '上海保障房数据汇总'
+            self.ws.append(
+                ['地区', '年份', '是否上海户籍', '本批准予（户）', '参加选房家庭（户）', '选购房源家庭（户）', '地址'])
         # house
-        # self.ws.title = '上海保障房户型数据汇总'
-        # self.ws.append(['地区', '年份', '一居室', '二居室', '三居室', '总户数', '地址'])
+        if self.types == 'house':
+            self.ws.title = '上海保障房户型数据汇总'
+            self.ws.append(['地区', '年份', '一居室', '二居室', '三居室', '总户数', '地址'])
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.spider)
 
     def process_item(self, item, spider):
         try:
             # 使用字典推导式简化数据提取
             # people
-            item_data = {key: item.get(key, '') for key in
-                         ['area', 'years', 'local', 'approved_value', 'participated_value', 'selected_value', 'link']}
-
-            # house
-            # item_data = {key: item.get(key, '') for key in
-            #              ['area', 'years', 'one', 'two', 'three', 'total', 'link']}
+            item_data = []
+            if self.types == 'people':
+                item_data = {key: item.get(key, '') for key in
+                             ['area', 'years', 'local', 'approved_value', 'participated_value', 'selected_value',
+                              'link']}
+            if self.types == 'house':
+                # house
+                item_data = {key: item.get(key, '') for key in
+                             ['area', 'years', 'one', 'two', 'three', 'total', 'link']}
             # Excel 插入
             self.ws.append(list(item_data.values()))
         except Exception as e:

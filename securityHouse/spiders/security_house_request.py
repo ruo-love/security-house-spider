@@ -34,7 +34,7 @@ class QuotesSpider(scrapy.Spider):
             # 提取元素的文本内容
             text = li.css('::text').get()
             item['title'] = text
-            if "保障住房选房结果公告" in text and self.types == 'people' and '2018' in text:
+            if "保障住房选房结果公告" in text and self.types == 'people':
                 print('title--', text)
                 if "非本市户籍" in text:
                     item['local'] = '否'
