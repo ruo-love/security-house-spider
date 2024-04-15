@@ -1,0 +1,750 @@
+2024-04-15 20:41:17 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: securityHouse)
+2024-04-15 20:41:17 [scrapy.utils.log] INFO: Versions: lxml 5.0.0.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.7, Platform Windows-10-10.0.18363-SP0
+2024-04-15 20:41:17 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-15 20:41:17 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-15 20:41:17 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-15 20:41:17 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-15 20:41:17 [scrapy.extensions.telnet] INFO: Telnet Password: 95f09860801ee9f0
+2024-04-15 20:41:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-15 20:41:17 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'securityHouse',
+ 'CONCURRENT_REQUESTS': 8,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\securityHouse\\securityHouse\\7224e6d5fb2511ee87c5b025aa31a78a.log',
+ 'NEWSPIDER_MODULE': 'securityHouse.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['securityHouse.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-15 20:41:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-15 20:41:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-15 20:41:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['securityHouse.pipelines.SecurityhousePipeline']
+2024-04-15 20:41:18 [scrapy.core.engine] INFO: Spider opened
+2024-04-15 20:41:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-15 20:41:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://fgj.sh.gov.cn/robots.txt> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_8.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_3.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_4.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_7.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_1.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_5.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/index_6.html> (referer: None)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/68e5b0f83bdb464b80e8ef10eeb81cc2.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/7043083a98ac467f808f0f3195a60e41.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/8782d9a0c826498fb3623b2d56d28e4e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/ae7b5618e6794f11a101fa589baee29e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/a21d3769c9e2429f9988b25f48d12590.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/e08863ef98ee403eb6a849826cf465f8.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://fgj.sh.gov.cn/gycqbzfgsgg/index_1.html>: HTTP status code is not handled or not allowed
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/1892e215f000454f8ea7e2639ff7d12d.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230926/dcf4193dd0ed40c898a3cf37af3500a5.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/d13496c16bf8405fa9ddcadb79ce936c.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221123/383249c9bf1542acafbe590cc2e42671.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221125/a66fd535a01f484db48144aa7ac877c7.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/562b65857bef4cb38bba2d51384ecdd1.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_7.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/68e5b0f83bdb464b80e8ef10eeb81cc2.html>
+{'approved_value': '176',
+ 'area': '嘉定',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/68e5b0f83bdb464b80e8ef10eeb81cc2.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '152',
+ 'selected_value': '146',
+ 'title': '嘉定区第十批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/7043083a98ac467f808f0f3195a60e41.html>
+{'approved_value': '39',
+ 'area': '奉贤',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/7043083a98ac467f808f0f3195a60e41.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '35',
+ 'selected_value': '35',
+ 'title': '奉贤区第十批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/8782d9a0c826498fb3623b2d56d28e4e.html>
+{'approved_value': '33',
+ 'area': '嘉定',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/8782d9a0c826498fb3623b2d56d28e4e.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '33',
+ 'selected_value': '33',
+ 'title': '嘉定区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230720/3c7af0c59fc44696961c8eec141eb7bd.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_4.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/ae7b5618e6794f11a101fa589baee29e.html>
+{'approved_value': 0,
+ 'area': '松江',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/ae7b5618e6794f11a101fa589baee29e.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': 0,
+ 'selected_value': '23',
+ 'title': '松江区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/a21d3769c9e2429f9988b25f48d12590.html>
+{'approved_value': '287',
+ 'area': '长宁',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/a21d3769c9e2429f9988b25f48d12590.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '250',
+ 'selected_value': '223',
+ 'title': '长宁区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/e08863ef98ee403eb6a849826cf465f8.html>
+{'approved_value': '17',
+ 'area': '奉贤',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20231013/e08863ef98ee403eb6a849826cf465f8.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '16',
+ 'selected_value': '16',
+ 'title': '奉贤区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/1892e215f000454f8ea7e2639ff7d12d.html>
+{'approved_value': '18',
+ 'area': '长宁',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/1892e215f000454f8ea7e2639ff7d12d.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '18',
+ 'selected_value': '16',
+ 'title': '长宁区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230707/4fb571c3b30544b58936b362daddca2e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_5.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230926/dcf4193dd0ed40c898a3cf37af3500a5.html>
+{'approved_value': '1',
+ 'area': '崇明',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230926/dcf4193dd0ed40c898a3cf37af3500a5.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '1',
+ 'selected_value': '1',
+ 'title': '崇明区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221020/1ec89ef0c57b4f569cedb5d7e1ea2e47.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/76382fcbc6d046b0b20d070d11cabcf2.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/eb75378dc9514d83aff45d3aaae4d2cc.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/d13496c16bf8405fa9ddcadb79ce936c.html>
+{'approved_value': '246',
+ 'area': '虹口',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/d13496c16bf8405fa9ddcadb79ce936c.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '211',
+ 'selected_value': '204',
+ 'title': '上海市虹口区2022年（第十批）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/86dcb94608d640eea00a962192992639.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_7.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/921e3b5fe4d544bdb6b9815fd3431e6f.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/54a089f1b9c0480d9d22a9ae251c6fcd.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221123/383249c9bf1542acafbe590cc2e42671.html>
+{'approved_value': '16',
+ 'area': '青浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221123/383249c9bf1542acafbe590cc2e42671.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '16',
+ 'selected_value': '16',
+ 'title': '上海市青浦区第四批(2022年)非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/0dac1a6f4c9f441b9e4976639579705a.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/75ad1e3b9d0a481685004e8a8bc4e457.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221125/a66fd535a01f484db48144aa7ac877c7.html>
+{'approved_value': '54',
+ 'area': '松江',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221125/a66fd535a01f484db48144aa7ac877c7.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '54',
+ 'selected_value': '54',
+ 'title': '松江区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/2a7981b38ba74855beb46e702ea9d571.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/562b65857bef4cb38bba2d51384ecdd1.html>
+{'approved_value': '37',
+ 'area': '金山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/562b65857bef4cb38bba2d51384ecdd1.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '30',
+ 'selected_value': '26',
+ 'title': '上海市金山区第十批(2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221026/82325a6ddb0e43b39c43d0b860c5930e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/cfde41a0c4e94694a5f91c89fc044677.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230720/3c7af0c59fc44696961c8eec141eb7bd.html>
+{'approved_value': '97',
+ 'area': '松江',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230720/3c7af0c59fc44696961c8eec141eb7bd.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '77',
+ 'selected_value': '76',
+ 'title': '松江区第十批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230707/4fb571c3b30544b58936b362daddca2e.html>
+{'approved_value': '21',
+ 'area': '崇明',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230707/4fb571c3b30544b58936b362daddca2e.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '15',
+ 'selected_value': '14',
+ 'title': '崇明区第十批(2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221028/01ae6bece9c541ceaffeb269e18dee41.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_11.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/045d475b510f40a1a32cc1106a27dafc.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/b820d9a173ee4d088908121cdde21240.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/10337a13ca014501902f2e1f10516003.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/4f1c9bf5f0244258bde2e058e7db191b.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/84cd3ced137b4116b93eb4dd1130d67f.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_10.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221020/1ec89ef0c57b4f569cedb5d7e1ea2e47.html>
+{'approved_value': '338',
+ 'area': '闵行',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221020/1ec89ef0c57b4f569cedb5d7e1ea2e47.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '295',
+ 'selected_value': '284',
+ 'title': '上海市闵行区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/76382fcbc6d046b0b20d070d11cabcf2.html>
+{'approved_value': '16',
+ 'area': '嘉定',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/76382fcbc6d046b0b20d070d11cabcf2.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '16',
+ 'selected_value': '16',
+ 'title': '嘉定区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/eb75378dc9514d83aff45d3aaae4d2cc.html>
+{'approved_value': '585',
+ 'area': '杨浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/eb75378dc9514d83aff45d3aaae4d2cc.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '463',
+ 'selected_value': '463',
+ 'title': '上海市杨浦区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/4c73494c8d7247808d3017e4d7f4ea8c.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/86dcb94608d640eea00a962192992639.html>
+{'approved_value': '4',
+ 'area': '金山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230627/86dcb94608d640eea00a962192992639.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '4',
+ 'selected_value': '4',
+ 'title': '上海市金山区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/587b8043f4d24fd994fcf78e4ebf9baf.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/921e3b5fe4d544bdb6b9815fd3431e6f.html>
+{'approved_value': '588',
+ 'area': '普陀',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/921e3b5fe4d544bdb6b9815fd3431e6f.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '497',
+ 'selected_value': '491',
+ 'title': '上海市普陀区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/57f8c098bd7a40b3b92e897f7ffa8488.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/391144d101d94352985dcdf2fc304ea4.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/54a089f1b9c0480d9d22a9ae251c6fcd.html>
+{'approved_value': '14',
+ 'area': '普陀',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221102/54a089f1b9c0480d9d22a9ae251c6fcd.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '14',
+ 'selected_value': '14',
+ 'title': '上海市普陀区第四批（2022年）非本市户籍共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/56711f6197ef4edd93d8bbee99ada061.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/d4ac9e92290f439097695ad511863fa1.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/ffdbc9754d4c49688dea4f76f7c7e770.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/fd10b32c1c6b418b9b3c0542e09d8a43.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/0dac1a6f4c9f441b9e4976639579705a.html>
+{'approved_value': '182',
+ 'area': '嘉定',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/0dac1a6f4c9f441b9e4976639579705a.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '158',
+ 'selected_value': '148',
+ 'title': '嘉定区第九批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/75ad1e3b9d0a481685004e8a8bc4e457.html>
+{'approved_value': '15',
+ 'area': '静安',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/75ad1e3b9d0a481685004e8a8bc4e457.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '15',
+ 'selected_value': '15',
+ 'title': '静安区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/2a7981b38ba74855beb46e702ea9d571.html>
+{'approved_value': '8',
+ 'area': '奉贤',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/2a7981b38ba74855beb46e702ea9d571.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '8',
+ 'selected_value': '8',
+ 'title': '上海市奉贤区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eeb8cc821f624891b5d46d9cbb5a0f3e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221026/82325a6ddb0e43b39c43d0b860c5930e.html>
+{'approved_value': '583',
+ 'area': '宝山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221026/82325a6ddb0e43b39c43d0b860c5930e.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '484',
+ 'selected_value': '466',
+ 'title': '上海市宝山区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/cfde41a0c4e94694a5f91c89fc044677.html>
+{'approved_value': '692',
+ 'area': '静安',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221103/cfde41a0c4e94694a5f91c89fc044677.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '575',
+ 'selected_value': '555',
+ 'title': '静安区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221028/01ae6bece9c541ceaffeb269e18dee41.html>
+{'approved_value': '359',
+ 'area': '长宁',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221028/01ae6bece9c541ceaffeb269e18dee41.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '315',
+ 'selected_value': '286',
+ 'title': '上海市长宁区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/045d475b510f40a1a32cc1106a27dafc.html>
+{'approved_value': '5',
+ 'area': '黄浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/045d475b510f40a1a32cc1106a27dafc.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '5',
+ 'selected_value': '5',
+ 'title': '黄浦区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/ad71dc7abe104001b9b6f5f53e3d4e6c.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/3a189c7cd2b549109cb6ce77cb7e3993.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/b820d9a173ee4d088908121cdde21240.html>
+{'approved_value': '850',
+ 'area': '浦东新区',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/b820d9a173ee4d088908121cdde21240.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '689',
+ 'selected_value': '689',
+ 'title': '上海市浦东新区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/10337a13ca014501902f2e1f10516003.html>
+{'approved_value': '313',
+ 'area': '黄浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221104/10337a13ca014501902f2e1f10516003.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '263',
+ 'selected_value': '246',
+ 'title': '黄浦区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eb2a15cdd1c4485da0c0883062cb4f84.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/4f1c9bf5f0244258bde2e058e7db191b.html>
+{'approved_value': '19',
+ 'area': '徐汇',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/4f1c9bf5f0244258bde2e058e7db191b.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '18',
+ 'selected_value': '18',
+ 'title': '徐汇区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/84cd3ced137b4116b93eb4dd1130d67f.html>
+{'approved_value': '375',
+ 'area': '徐汇',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221108/84cd3ced137b4116b93eb4dd1130d67f.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '286',
+ 'selected_value': '276',
+ 'title': '徐汇区第十批（2022年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/4c73494c8d7247808d3017e4d7f4ea8c.html>
+{'approved_value': '275',
+ 'area': '黄浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/4c73494c8d7247808d3017e4d7f4ea8c.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '223',
+ 'selected_value': '204',
+ 'title': '黄浦区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/587b8043f4d24fd994fcf78e4ebf9baf.html>
+{'approved_value': '2',
+ 'area': '黄浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/587b8043f4d24fd994fcf78e4ebf9baf.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '2',
+ 'selected_value': '2',
+ 'title': '黄浦区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/dd318399b3064958b7cd0984279ad581.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_2.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221207/d720befb006c4e7e8fbd64b310a810f9.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/57f8c098bd7a40b3b92e897f7ffa8488.html>
+{'approved_value': '334',
+ 'area': '徐汇',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/57f8c098bd7a40b3b92e897f7ffa8488.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '246',
+ 'selected_value': '230',
+ 'title': '徐汇区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/391144d101d94352985dcdf2fc304ea4.html>
+{'approved_value': '545',
+ 'area': '静安',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/391144d101d94352985dcdf2fc304ea4.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '428',
+ 'selected_value': '385',
+ 'title': '静安区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/56711f6197ef4edd93d8bbee99ada061.html>
+{'approved_value': '230',
+ 'area': '虹口',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/56711f6197ef4edd93d8bbee99ada061.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '177',
+ 'selected_value': '167',
+ 'title': '虹口区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/d4ac9e92290f439097695ad511863fa1.html>
+{'approved_value': '81',
+ 'area': '青浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/d4ac9e92290f439097695ad511863fa1.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '71',
+ 'selected_value': '53',
+ 'title': '青浦区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/ffdbc9754d4c49688dea4f76f7c7e770.html>
+{'approved_value': '18',
+ 'area': '青浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/ffdbc9754d4c49688dea4f76f7c7e770.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '18',
+ 'selected_value': '17',
+ 'title': '青浦区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/fd10b32c1c6b418b9b3c0542e09d8a43.html>
+{'approved_value': '4',
+ 'area': '虹口',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230818/fd10b32c1c6b418b9b3c0542e09d8a43.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '4',
+ 'selected_value': '4',
+ 'title': '虹口区第五批（2023年）非本市户籍共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/205d8d16150049c8a75e5668ad2c487d.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_3.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/b61ae7b8fa3f4cf2af0df1eb3beaa2ce.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_9.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eeb8cc821f624891b5d46d9cbb5a0f3e.html>
+{'approved_value': '13',
+ 'area': '徐汇',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eeb8cc821f624891b5d46d9cbb5a0f3e.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '13',
+ 'selected_value': '12',
+ 'title': '徐汇区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/5cdf0b2364c143ebacb0afe4244270df.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/1d810ecf75fe452ebea46fe3208f06bc.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_3.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/9aa341f0dc1246f1a715def35e7b6b03.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_3.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/ad71dc7abe104001b9b6f5f53e3d4e6c.html>
+{'approved_value': '533',
+ 'area': '杨浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/ad71dc7abe104001b9b6f5f53e3d4e6c.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '385',
+ 'selected_value': '385',
+ 'title': '杨浦区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/3a189c7cd2b549109cb6ce77cb7e3993.html>
+{'approved_value': '688',
+ 'area': '浦东新区',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230901/3a189c7cd2b549109cb6ce77cb7e3993.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '529',
+ 'selected_value': '529',
+ 'title': '浦东新区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/408c1b6db0e6499b81fae0d3563fb91e.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_3.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eb2a15cdd1c4485da0c0883062cb4f84.html>
+{'approved_value': '20',
+ 'area': '静安',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230811/eb2a15cdd1c4485da0c0883062cb4f84.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '20',
+ 'selected_value': '20',
+ 'title': '静安区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20221213/10c276a76eed443497f8d995cbced437.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_8.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20230201/8b4fbe8fe54640339775e14950e456b0.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index_8.html)
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/84e87b72599840b0abd86fde3a790f58.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/dd318399b3064958b7cd0984279ad581.html>
+{'approved_value': '11',
+ 'area': '杨浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230825/dd318399b3064958b7cd0984279ad581.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '11',
+ 'selected_value': '11',
+ 'title': '杨浦区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221207/d720befb006c4e7e8fbd64b310a810f9.html>
+{'approved_value': '37',
+ 'area': '闵行',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221207/d720befb006c4e7e8fbd64b310a810f9.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '37',
+ 'selected_value': '37',
+ 'title': '闵行区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/205d8d16150049c8a75e5668ad2c487d.html>
+{'approved_value': '457',
+ 'area': '宝山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/205d8d16150049c8a75e5668ad2c487d.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '351',
+ 'selected_value': '329',
+ 'title': '宝山区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/b61ae7b8fa3f4cf2af0df1eb3beaa2ce.html>
+{'approved_value': '10',
+ 'area': '杨浦',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221205/b61ae7b8fa3f4cf2af0df1eb3beaa2ce.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '10',
+ 'selected_value': '10',
+ 'title': '上海市杨浦区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/5cdf0b2364c143ebacb0afe4244270df.html>
+{'approved_value': '294',
+ 'area': '闵行',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/5cdf0b2364c143ebacb0afe4244270df.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '249',
+ 'selected_value': '238',
+ 'title': '闵行区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://fgj.sh.gov.cn/gycqbzfgsgg/20231027/c4e917eaa57046d6864d6b2d362b6cb0.html> (referer: https://fgj.sh.gov.cn/gycqbzfgsgg/index.html)
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/1d810ecf75fe452ebea46fe3208f06bc.html>
+{'approved_value': '14',
+ 'area': '普陀',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/1d810ecf75fe452ebea46fe3208f06bc.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '14',
+ 'selected_value': '14',
+ 'title': '上海市普陀区第五批（2023年）非本市户籍共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/9aa341f0dc1246f1a715def35e7b6b03.html>
+{'approved_value': '477',
+ 'area': '普陀',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230804/9aa341f0dc1246f1a715def35e7b6b03.html',
+ 'local': '是',
+ 'max': '12',
+ 'participated_value': '389',
+ 'selected_value': '377',
+ 'title': '上海市普陀区第十一批（2023年）共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/408c1b6db0e6499b81fae0d3563fb91e.html>
+{'approved_value': '30',
+ 'area': '宝山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230728/408c1b6db0e6499b81fae0d3563fb91e.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '30',
+ 'selected_value': '29',
+ 'title': '宝山区第五批（2023年）非本市户籍居民家庭 共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/84e87b72599840b0abd86fde3a790f58.html>
+{'approved_value': '35',
+ 'area': '闵行',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20231018/84e87b72599840b0abd86fde3a790f58.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '34',
+ 'selected_value': '34',
+ 'title': '闵行区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20221213/10c276a76eed443497f8d995cbced437.html>
+{'approved_value': '18',
+ 'area': '宝山',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20221213/10c276a76eed443497f8d995cbced437.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '18',
+ 'selected_value': '18',
+ 'title': '上海市宝山区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20230201/8b4fbe8fe54640339775e14950e456b0.html>
+{'approved_value': '17',
+ 'area': '长宁',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20230201/8b4fbe8fe54640339775e14950e456b0.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '17',
+ 'selected_value': '16',
+ 'title': '长宁区第四批（2022年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2022年'}
+2024-04-15 20:41:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://fgj.sh.gov.cn/gycqbzfgsgg/20231027/c4e917eaa57046d6864d6b2d362b6cb0.html>
+{'approved_value': '99',
+ 'area': '浦东新区',
+ 'link': 'https://fgj.sh.gov.cn/gycqbzfgsgg/20231027/c4e917eaa57046d6864d6b2d362b6cb0.html',
+ 'local': '否',
+ 'max': '12',
+ 'participated_value': '97',
+ 'selected_value': '96',
+ 'title': '浦东新区第五批（2023年）非本市户籍居民家庭共有产权保障住房选房结果公告',
+ 'types': 'people',
+ 'years': '2023年'}
+2024-04-15 20:41:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-15 20:41:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 24518,
+ 'downloader/request_count': 68,
+ 'downloader/request_method_count/GET': 68,
+ 'downloader/response_bytes': 194346,
+ 'downloader/response_count': 68,
+ 'downloader/response_status_count/200': 66,
+ 'downloader/response_status_count/404': 2,
+ 'elapsed_time_seconds': 1.252436,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 41, 19, 404067, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 589272,
+ 'httpcompression/response_count': 66,
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'item_scraped_count': 55,
+ 'log_count/DEBUG': 126,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 68,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 67,
+ 'scheduler/dequeued/memory': 67,
+ 'scheduler/enqueued': 67,
+ 'scheduler/enqueued/memory': 67,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 41, 18, 151631, tzinfo=datetime.timezone.utc)}
+2024-04-15 20:41:19 [scrapy.core.engine] INFO: Spider closed (finished)
